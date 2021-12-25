@@ -6,9 +6,10 @@ using namespace std;
 class TreeUtils
 {
 public:
-    vector<int> Preorder(node *n)
+    template<typename T1>
+    vector<T1> Preorder(node *n)
     {
-        static vector<int> order;
+        static vector<T1> order;
         order.push_back(n->value);
 
         if(n->left != NULL)
